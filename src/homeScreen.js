@@ -1,0 +1,36 @@
+const drawHome = () => {
+    console.log("homeScreen flowing!");
+    const content = document.querySelector("#content");
+    const header = document.createElement("div");
+    header.classList.add("header");
+    header.textContent = "header";
+    const leftSidebar = document.createElement("div");
+    leftSidebar.classList.add("leftSidebar");
+    leftSidebar.textContent = "left sidebar";
+    const display = document.createElement("div");
+    display.classList.add("display");
+    //display.textContent = "display";
+    const homePizza = document.createElement("img");
+    homePizza.setAttribute("src", "../img/pizza1.jpg");
+    homePizza.setAttribute("width", "75%");
+    const tagline = document.createElement("h2");
+    tagline.textContent = "Pizza tagline";
+    const blurb = document.createElement("p");
+    blurb.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus non dui id placerat. Nulla et leo sit amet nisl faucibus facilisis. In rhoncus hendrerit erat, quis varius mauris rhoncus non. Donec porttitor pretium cursus. Etiam non finibus tortor. Ut sapien augue, condimentum eget velit id, sodales condimentum magna.";
+    const rightSidebar = document.createElement("div");
+    rightSidebar.classList.add("rightSidebar");
+    rightSidebar.textContent = "right sidebar";
+    const footer = document.createElement("div");
+    footer.classList.add("footer");
+    footer.textContent = "footer";
+    content.appendChild(header);
+    content.appendChild(leftSidebar);
+    content.appendChild(display);
+    display.appendChild(homePizza);
+    display.appendChild(tagline);
+    display.appendChild(blurb);
+    content.appendChild(rightSidebar);
+    content.appendChild(footer);
+    };
+
+export { drawHome };

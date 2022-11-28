@@ -1,0 +1,35 @@
+h2 {
+    font-size: large;
+}
+
+#content {
+    height: 100vh;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 1fr 40px;
+}
+
+.header, .footer {
+    background-color: darkgreen;
+    grid-column: 1 / -1;
+}
+
+.header {
+    grid-row: 1 / 2;
+}
+.leftSidebar, .rightSidebar, .display {
+    grid-row: 2 / -2;
+}
+
+.display {
+    background-color: rgb(253, 237, 212);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer {
+    grid-row: -1 / -2;
+}
