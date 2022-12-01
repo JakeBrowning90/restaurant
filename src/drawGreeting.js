@@ -16,10 +16,6 @@ const drawGreeting = () => {
 
     const hoursBlock = document.createElement("div");
     hoursBlock.classList.add("hoursBlock");
-
-    const homePizza = document.createElement("img");
-    homePizza.setAttribute("src", "../img/pizza1.jpg");
-    homePizza.classList.add("pizzaBG");
     
     const daysList = document.createElement("ul");
     daysList.classList.add("daysList");
@@ -38,12 +34,8 @@ const drawGreeting = () => {
     const sunday = document.createElement("li");
     sunday.textContent = "Sunday: 11:00 - 20:00"
     display.appendChild(tagline);
-    // display.appendChild(homePizza);
-
     display.appendChild(hoursBlock);
-   // hoursBlock.appendChild(homePizza);
     hoursBlock.appendChild(daysList);
-    
     daysList.appendChild(monday);
     daysList.appendChild(tuesday);
     daysList.appendChild(wednesday);
