@@ -1,6 +1,6 @@
 @font-face {
     font-family: Londrina;
-    src: url(../fonts/LondrinaSolid-Regular.ttf);
+    src: url(fonts/LondrinaSolid-Regular.ttf);
 }
 
 
@@ -77,10 +77,10 @@ button {
 }
 
 .hoursBlock {
-    width: 75vw;
+    width: 75%;
     display: flex;
     justify-content: center;
-    background-image: url(../img/pizza1.jpg);
+    background-image: url(img/pizza1.jpg);
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;

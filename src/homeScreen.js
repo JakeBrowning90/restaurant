@@ -18,11 +18,11 @@ const drawHome = () => {
     const headerLogo = document.createElement('div');
     headerLogo.classList.add("headerLogo");
     const pizzaLogo = document.createElement('img');
-    pizzaLogo.setAttribute("src", "../img/pizzaArt.png");
+    pizzaLogo.setAttribute("src", "../src/img/pizzaArt.png");
     pizzaLogo.setAttribute("height", "50vh");
 
     const restaurantName = document.createElement('img');
-    restaurantName.setAttribute("src", "../img/restaurantName.png");
+    restaurantName.setAttribute("src", "../src/img/restaurantName.png");
     restaurantName.setAttribute("height", "50vh");
 
     const tabNav = document.createElement('div');
@@ -55,11 +55,11 @@ const drawHome = () => {
     const headerSocials = document.createElement('div');
     headerSocials.classList.add("headerSocials");
     const facebookLogo = document.createElement('img');
-    facebookLogo.setAttribute("src", "../img/icons8-facebook-24.png");
+    facebookLogo.setAttribute("src", "../src/img/icons8-facebook-24.png");
     const instaLogo = document.createElement('img');
-    instaLogo.setAttribute("src", "../img/icons8-instagram-24.png");
+    instaLogo.setAttribute("src", "../src/img/icons8-instagram-24.png");
     const tiktokLogo = document.createElement('img');
-    tiktokLogo.setAttribute("src", "../img/icons8-tiktok-24.png");
+    tiktokLogo.setAttribute("src", "../src/img/icons8-tiktok-24.png");
 
     const leftSidebar = document.createElement("div");
     leftSidebar.classList.add("leftSidebar");
