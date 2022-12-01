@@ -10,7 +10,7 @@ function clearDisplay() {
 };
 
 const drawHome = () => {
-    console.log("homeScreen flowing!");
+    //console.log("homeScreen flowing!");
     const content = document.querySelector("#content");
     const header = document.createElement("div");
     header.classList.add("header");
@@ -29,6 +29,7 @@ const drawHome = () => {
     tabNav.classList.add("tabNav");
 
     const homeButton = document.createElement('button');
+    homeButton.id = "homeButton";
     homeButton.textContent = "Home";
     homeButton.addEventListener("click", function () {
         clearDisplay();
@@ -36,6 +37,7 @@ const drawHome = () => {
     });
 
     const menuButton = document.createElement('button');
+    menuButton.id = "menuButton";
     menuButton.textContent = "Menu";
     menuButton.addEventListener("click", function () {
         clearDisplay();
@@ -43,6 +45,7 @@ const drawHome = () => {
     });
 
     const contactButton = document.createElement('button');
+    contactButton.id = "contactButton";
     contactButton.textContent = "Contact";
     contactButton.addEventListener("click", function () {
         clearDisplay();
