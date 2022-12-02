@@ -1,6 +1,11 @@
 import { drawMenu } from "./drawMenu";
 import { drawGreeting } from './drawGreeting';
 import { drawContact } from './drawContact';
+import pizzaArtAsset from './img/pizzaArt.png';
+import restaurantNameAsset from './img/restaurantName.png';
+import facebookLogoAsset from './img/icons8-facebook-24.png';
+import instagramLogoAsset from './img/icons8-instagram-24.png';
+import tiktokLogoAsset from './img/icons8-tiktok-24.png';
 
 function clearDisplay() {
     const display = document.querySelector(".display");
@@ -17,12 +22,13 @@ const drawHome = () => {
 
     const headerLogo = document.createElement('div');
     headerLogo.classList.add("headerLogo");
-    const pizzaLogo = document.createElement('img');
-    pizzaLogo.setAttribute("src", "../src/img/pizzaArt.png");
+
+    const pizzaLogo = new Image();
+    pizzaLogo.src = pizzaArtAsset;
     pizzaLogo.setAttribute("height", "50vh");
 
-    const restaurantName = document.createElement('img');
-    restaurantName.setAttribute("src", "../src/img/restaurantName.png");
+    const restaurantName = new Image();
+    restaurantName.src = restaurantNameAsset;
     restaurantName.setAttribute("height", "50vh");
 
     const tabNav = document.createElement('div');
@@ -54,21 +60,21 @@ const drawHome = () => {
 
     const headerSocials = document.createElement('div');
     headerSocials.classList.add("headerSocials");
-    const facebookLogo = document.createElement('img');
-    facebookLogo.setAttribute("src", "../src/img/icons8-facebook-24.png");
-    const instaLogo = document.createElement('img');
-    instaLogo.setAttribute("src", "../src/img/icons8-instagram-24.png");
-    const tiktokLogo = document.createElement('img');
-    tiktokLogo.setAttribute("src", "../src/img/icons8-tiktok-24.png");
+    const facebookLogo = new Image();
+    facebookLogo.src = facebookLogoAsset;
+    const instaLogo = new Image();
+    instaLogo.src = instagramLogoAsset;
+    const tiktokLogo = new Image();
+    tiktokLogo.src = tiktokLogoAsset;
 
     const leftSidebar = document.createElement("div");
     leftSidebar.classList.add("leftSidebar");
-    //leftSidebar.textContent = "left sidebar";
+
     const display = document.createElement("div");
     display.classList.add("display");
     const rightSidebar = document.createElement("div");
     rightSidebar.classList.add("rightSidebar");
-    //rightSidebar.textContent = "right sidebar";
+
     const footer = document.createElement("div");
     footer.classList.add("footer");
     footer.textContent = "Created by Jake Browning for The Odin Project, 2022";
